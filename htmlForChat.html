@@ -1,0 +1,84 @@
+
+<style>
+
+  .human, .robot {
+    padding: 1.5rem; 
+    border-radius: 0.5rem; 
+    margin-bottom: 1rem; 
+    display: flex;
+  }
+
+  .human {
+    background-color: lightblue;
+  }
+
+  .robot {
+    background-color: lightpink;
+  }
+
+  .human-pics, .robot-pics {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .human-pics2, .robot-pics2 {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .human-messages, robot-messages {
+    width: 80%;
+    padding: 0 1.5rem;
+    color: rgb(0, 0, 0);
+  }
+
+<style>
+    .fade-in {
+        animation: fadeIn ease 3s;
+        -webkit-animation: fadeIn ease 3s;
+        -moz-animation: fadeIn ease 3s;
+        -o-animation: fadeIn ease 3s;
+        -ms-animation: fadeIn ease 3s;
+    }
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+</style>
+
+<div class="human fade-in">
+  <div class="human-messages">{{human message}}</div>
+
+  <div class="human-pics">
+    <img class="human-pics2" src="https://pm1.aminoapps.com/6800/f9081789b607bcaf441d43a7ec321ed3707005a2v2_00.jpg">
+  </div>  
+</div>
+
+
+<div class="robot fade-in">
+  <div class="robot-pics">
+    <img class = "robot-pics2" src="https://wallpapercave.com/wp/wp8007455.jpg">
+  </div>
+
+  <div class="robot-messages">{{robot message}}</div>
+</div>
